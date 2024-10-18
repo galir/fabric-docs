@@ -50,6 +50,15 @@ Data Activator isn't authorized to access the event stream item for your Data Ac
 
 The event stream item connected to your Data Activator object contains data in a format that isn't recognized by Data Activator. To resolve the problem, review the data in your event stream item to ensure that it's in JSON dictionary format, as described in [Get data for Data Activator from event streams](data-activator-get-data-eventstreams.md).
 
+## Ecveeded capacity error codes
+
+The following error codes represent Activator problems that can occur when your account runs out of Fabric capacity.
+
+### CapacityLimitExceeded
+Your account has exceeded the limit of your Fabric capacity for more than 24 hours. When this happens, throttling policies are applied and Activator pauses rules evaluation, background operations, and activations. To resolve this problem, contact your capacity administrator and ask them to review capacity usage and upgrade as needed. Once your capacity issue is resolved, make sure to reactivate your rules.
+
+Leanr more with [Understand your Fabric capacity throttling](https://go.microsoft.com/fwlink/?linkid=2293008) article. 
+
 ## Trigger evaluation error codes
 
 The following error codes represent problems that can occur when Data Activator evaluates your trigger condition to see if the condition is met.
